@@ -14,9 +14,10 @@ class HomePage extends StatelessWidget {
         children: [
           _searchField(),
           const SizedBox(height: 40),
-          const Column(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
                   'Category',
@@ -25,6 +26,18 @@ class HomePage extends StatelessWidget {
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Container(
+                height: 150,
+                color: Colors.green,
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container();
+                  },
                 ),
               ),
             ],
