@@ -23,7 +23,7 @@ class CategoryModel {
     categories.add(CategoryModel(
       name: 'Cake',
       iconPath: 'assets/icons/pancakes.svg',
-      boxColor: const Color(0xff92a3fd),
+      boxColor: const Color(0xffc588f2),
     ));
 
     categories.add(CategoryModel(
@@ -35,7 +35,7 @@ class CategoryModel {
     categories.add(CategoryModel(
       name: 'Smoothies',
       iconPath: 'assets/icons/orange-snacks.svg',
-      boxColor: const Color(0xff92a3fd),
+      boxColor: const Color(0xffc588f2),
     ));
 
     return categories;

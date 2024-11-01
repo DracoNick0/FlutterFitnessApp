@@ -47,8 +47,15 @@ class HomePage extends StatelessWidget {
                 height: 150,
                 child: ListView.builder(
                   itemCount: categories.length,
+                  scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    return Container();
+                    return Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                        color: categories[index].boxColor,
+                      ),
+                    );
                   },
                 ),
               ),
