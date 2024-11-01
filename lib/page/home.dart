@@ -27,6 +27,10 @@ class HomePage extends StatelessWidget {
                 fillColor: Colors.white,
                 contentPadding: const EdgeInsets.all(15),
                 hintText: 'Search Pancake',
+                hintStyle: TextStyle(
+                  color: Color(0xffdddada),
+                  fontSize: 14,
+                ),
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(12),
                   child: SvgPicture.asset('assets/icons/Search.svg'),
