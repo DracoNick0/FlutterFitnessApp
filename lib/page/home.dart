@@ -11,11 +11,11 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 40, left: 20, right: 20),
+            margin: const EdgeInsets.only(top: 40, left: 20, right: 20),
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: Color(0xff1D1617).withOpacity(0.11),
+                  color: const Color(0xff1D1617).withOpacity(0.11),
                   blurRadius: 40,
                   spreadRadius: 0.0,
                 ),
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Colors.white,
-                contentPadding: EdgeInsets.all(15),
+                contentPadding: const EdgeInsets.all(15),
                 prefixIcon: SvgPicture.asset('assets/icons/Search.svg'),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
 
   AppBar appBar() {
     return AppBar(
-      title: Text(
+      title: const Text(
         'Breakfast',
         style: TextStyle(
           color: Colors.black,
@@ -55,16 +55,16 @@ class HomePage extends StatelessWidget {
       leading: GestureDetector(
         onTap: () {},
         child: Container(
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: const Color(0x0ff7f8f8),
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: SvgPicture.asset(
             'assets/icons/Arrow - Left 2.svg',
             height: 20,
             width: 20,
-          ),
-          decoration: BoxDecoration(
-            color: Color(0xff7F8F8),
-            borderRadius: BorderRadius.circular(10),
           ),
         ),
       ),
@@ -72,17 +72,17 @@ class HomePage extends StatelessWidget {
         GestureDetector(
           onTap: () {},
           child: Container(
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             alignment: Alignment.center,
             width: 37,
+            decoration: BoxDecoration(
+              color: const Color(0x0ff7f8f8),
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: SvgPicture.asset(
               'assets/icons/dots.svg',
               height: 5,
               width: 5,
-            ),
-            decoration: BoxDecoration(
-              color: Color(0xff7F8F8),
-              borderRadius: BorderRadius.circular(10),
             ),
           ),
         )
