@@ -25,6 +25,8 @@ class HomePage extends StatelessWidget {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Colors.white,
+                contentPadding: EdgeInsets.all(15),
+                prefixIcon: SvgPicture.asset('assets/icons/Search.svg'),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                   borderSide: BorderSide.none,
